@@ -5,29 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de cadastro</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
+<header>
+    <h1>Formulário de cadastro</h1>
+</header>
 <body>
-    <form method="post" autocomplete="off">
-        <label>Nome: </label><input type="text">
-        <label>Sobrenome: </label><input type="text">
-        <label>Data de nascimento: </label><input type="text">
-        <label>Sexo: </label><input type="text">
-
-        <label>E-mail: </label><input type="email">
-        <label>Telefone: </label><input type="number">
-        <label>Celular: </label><input type="number">
-        <label>Linkedin</label><input type="text">
-
-        <label>CEP: </label><input type="number">
-        <label>Endereço: </label><input type="text">
-        <label>N° </label><input type="number">
-        <label>Complemento: </label><input type="text">
-        <label>Bairro: </label><input type="text">
-        <label>Cidade: </label><input type="text">
-        <label>Estado: </label><input type="text">
+    <form class="formulario" method="post" autocomplete="off" name="formulario" onclick="">
+        <fieldset>
+            <fieldset class="informacoesPessoais">
+                <legend id="informacoesPessoais_legend">Informações pessoais</legend>
+                <label>Nome: </label><input type="text" required>
+                <label>Sobrenome: </label><input type="text" required>
+                <label>Data de nascimento: </label><input name="nascimento" id="nascimento" type="date" data-tipo="dataNascimento" required>
+                <label>Sexo: </label><input type="text">
+            </fieldset>
+            <fieldset class="informacoesContato">
+                <legend id="informacoesContato_legend">Informações de contato</legend>
+                <label>E-mail: </label><input type="email">
+                <label>Telefone: </label><input type="number">
+                <label>Celular: </label><input type="number" required>
+                <label>Linkedin</label><input type="text">
+            </fieldset>
+            <fieldset class="informacoesResidenciais">
+                <legend id="informacoesResidenciais_legend">Informações residenciais</legend>
+                <label>CEP: </label><input type="number" required>
+                <label>Endereço: </label><input type="text">
+                <label>N° </label><input type="number">
+                <label>Complemento: </label><input type="text">
+                <label>Bairro: </label><input type="text">
+                <label>Cidade: </label><input type="text">
+                <label>Estado: </label><input type="text">
+            </fieldset>
+        </fieldset>
     </form>
-    <button type="reset">Limpar informações</button>
-    <button type="submit">Enviar</button>
+    <div class="botao">
+        <button id="botaoLimpar" type="reset">Limpar informações</button>
+        <button id="botaoEnviar" type="submit">Enviar</button>
+    </div>
     
 </body>
 </html>

@@ -1,0 +1,49 @@
+
+
+h1 {
+    padding: 20px;
+    border: 10px;
+    margin: 20px;
+    text-align: center;
+}
+
+.formulario{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    border: 20px;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+}
+.informacoesPessoais, .informacoesContato, .informacoesResidenciais {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#informacoesPessoais_legend, #informacoesContato_legend, #informacoesResidenciais_legend {
+    text-align: center;
+}
+
+.botao {
+    text-align: center;
+}
+
+#botaoLimpar{
+    padding: 10px;
+}
+
+#botaoEnviar {
+    padding: 10px;
+}
+
+#botaoLimpar:hover {
+    cursor: pointer;
+} 
+#botaoEnviar:hover {
+    cursor: pointer;
+}
+
