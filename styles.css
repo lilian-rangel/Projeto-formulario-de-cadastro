@@ -1,49 +1,64 @@
-
-
-h1 {
-    padding: 20px;
-    border: 10px;
-    margin: 20px;
-    text-align: center;
+html
+:root {
+  height: 100%;
 }
-
-.formulario{
-    width: 100%;
-    height: auto;
-    padding: 20px;
-    border: 20px;
-    align-content: center;
+input {
+    box-sizing: border-box;
+    outline: none;
+  }
+  body {
+    background: linear-gradient(180deg, #fe8c00 0%, #b4563b 100%);
+    background-size: 100%;
+    margin: 0;
+    height: 100%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+  }
+  .wrapper {
+    display: flex;
+    align-items: center;
     justify-content: center;
+    height: 100%;
+  }
+  #formulario {
+    width: 800px;
+    min-height: 400px;
+    background: #fff;
+    border-radius: 6px;
+    padding: 20px 30px 0 30px;
+  }
+  #formulario legend {
+    color: #f94d00;
+    font-weight: bold;
+    text-align: center;
+    margin: 5px 0;
+    font-size: 22px;
+  }
+  .informacoesPessoais, .informacoesContato, .informacoesResidenciais {
+    margin: 10px 0;
     display: flex;
     flex-direction: column;
-
-}
-.informacoesPessoais, .informacoesContato, .informacoesResidenciais {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-#informacoesPessoais_legend, #informacoesContato_legend, #informacoesResidenciais_legend {
-    text-align: center;
-}
-
-.botao {
-    text-align: center;
-}
-
-#botaoLimpar{
-    padding: 10px;
-}
-
-#botaoEnviar {
-    padding: 10px;
-}
-
-#botaoLimpar:hover {
+    font-size: 14px;
+    font-weight: bold;
+    color: #393939;
+  }
+  input, select{
     cursor: pointer;
-} 
-#botaoEnviar:hover {
+  }
+  .footer {
+    text-align: center;
+    padding: 10px;
+  }
+  .botao {
+    background: #73a4dc;
+    border-radius: 2px;
+    padding: 10px 15px;
+    border: none;
+    color: #fff;
+    font-weight: bold;
     cursor: pointer;
-}
+  }
+  .botao:hover {
+    background: #5988bd;
+  }
 

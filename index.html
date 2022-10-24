@@ -6,42 +6,161 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de cadastro</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./script.js">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap">
 </head>
-<header>
-    <h1>Formulário de cadastro</h1>
-</header>
 <body>
-    <form class="formulario" method="post" autocomplete="off" name="formulario" onclick="">
-        <fieldset>
-            <fieldset class="informacoesPessoais">
-                <legend id="informacoesPessoais_legend">Informações pessoais</legend>
-                <label>Nome: </label><input type="text" required>
-                <label>Sobrenome: </label><input type="text" required>
-                <label>Data de nascimento: </label><input name="nascimento" id="nascimento" type="date" data-tipo="dataNascimento" required>
-                <label>Sexo: </label><input type="text">
+    <div class="wrapper">
+        <form id="formulario" method="post" autocomplete="off" name="formulario" action="">
+            <legend style="color: black;">Formulário de cadastro</legend>
+            <fieldset>
+                <legend>Informações pessoais</legend>
+                <div class="informacoesPessoais">
+                    <label for="nome">Nome: </label>
+                        <input 
+                            type="text"
+                            id="nome"
+                            name="nome"
+                            placeholder="Insira seu nome"
+                            required
+                        />
+                    <label for="sobrenome">Sobrenome: </label>
+                        <input 
+                            type="text"
+                            id="sobrenome"
+                            placeholder="Insira seu sobrenome"
+                            required
+                        />
+                    <label for="datadenascimento">Data de nascimento: </label>
+                        <input 
+                            type="date"
+                            id="nascimento"
+                            name="nascimento"
+                            data-tipo="dataNascimento"
+                            required
+                        />
+                    <label for="sexo">Sexo: </label>
+                        <select name="sexo" id="sexo">
+                            <option value="">Informe seu sexo</option>
+                            <option value="f">Feminino</option>
+                            <option value="m">Masculino</option>
+                            <option value="x">Prefiro não informar</option>
+                        </select>
+                </div>
+            </fieldset>    
+            <fieldset>
+                <legend>Informações de contato</legend>
+                <div class="informacoesContato">
+                        <label for="email">E-mail: </label>
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="Insira seu e-mail"
+                                data-tipo="email"
+                                pattern="[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?"
+                                required
+                            />
+                        <label for="telefone">Telefone: </label>
+                            <input 
+                                type="number"
+                                id="telefone"
+                            />
+                        <label for="celular">Celular: </label>
+                            <input 
+                                type="number"
+                                id="celular"
+                                placeholder="(xx)xxxxx-xxxx"
+                                pattern="\(?[0-9]{2}\)?\s?9[0-9]{4}-[0-9]{4}"
+                                required>
+                        <label for="linkedin">Linkedin</label>
+                            <input 
+                                type="url"
+                                id="linkedin">
+                </div>
+            </fieldset>    
+            <fieldset>
+                <legend>Informações residenciais</legend>
+                    <div class="informacoesResidenciais">
+                        <label for="cep">CEP: </label>
+                            <input 
+                                type="text"
+                                id="cep"
+                                placeholder="CEP" 
+                                pattern="[\d]{5}-?[\d]{3}" 
+                                data-tipo="cep" 
+                                required
+                            />
+                        <label for="endereco">Endereço: </label>
+                            <input 
+                                type="text"
+                                id="endereco"
+                                placeholder="Insira seu endreço"
+                                required
+                            />
+                        <label for="numero">N° </label>
+                            <input 
+                                type="text"
+                                id="numero"
+                                required
+                            />
+                        <label for="complemento">Complemento: </label>
+                            <input 
+                                type="text"
+                                id="complemento"
+                                required
+                            />
+                        <label for="bairro">Bairro: </label>
+                            <input 
+                                type="text"
+                                id="bairro"
+                                required
+                            />
+                        <label for="cidade">Cidade: </label>
+                            <input 
+                                type="text"
+                                id="cidade"
+                                required
+                            />
+                        <label for="estado">Estado: </label>
+                            <select name="estados-brasil" required>
+                                <option value="">Selecione seu Estado</option>
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                            </select>    
+                    </div>
             </fieldset>
-            <fieldset class="informacoesContato">
-                <legend id="informacoesContato_legend">Informações de contato</legend>
-                <label>E-mail: </label><input type="email">
-                <label>Telefone: </label><input type="number">
-                <label>Celular: </label><input type="number" required>
-                <label>Linkedin</label><input type="text">
-            </fieldset>
-            <fieldset class="informacoesResidenciais">
-                <legend id="informacoesResidenciais_legend">Informações residenciais</legend>
-                <label>CEP: </label><input type="number" required>
-                <label>Endereço: </label><input type="text">
-                <label>N° </label><input type="number">
-                <label>Complemento: </label><input type="text">
-                <label>Bairro: </label><input type="text">
-                <label>Cidade: </label><input type="text">
-                <label>Estado: </label><input type="text">
-            </fieldset>
-        </fieldset>
-    </form>
-    <div class="botao">
-        <button id="botaoLimpar" type="reset">Limpar informações</button>
-        <button id="botaoEnviar" type="submit">Enviar</button>
+            <div class="footer">
+                <button type="submit" class="botao" onclick="validar()">
+                  Enviar
+                </button>
+                <button type="reset" class="botao">Limpar formulário</button>
+              </div>
+        </form>
     </div>
     
 </body>
