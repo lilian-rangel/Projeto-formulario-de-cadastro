@@ -26,6 +26,7 @@ input {
     background: #fff;
     border-radius: 6px;
     padding: 20px 30px 0 30px;
+    margin: 15px;
   }
   #formulario legend {
     color: #f94d00;
@@ -48,17 +49,19 @@ input {
   .footer {
     text-align: center;
     padding: 10px;
+    margin-top: 10px ;
   }
   .botao {
-    background: #73a4dc;
+    background: linear-gradient(-45deg, #ffce51, #ff7253, #fd5754);
     border-radius: 2px;
     padding: 10px 15px;
     border: none;
     color: #fff;
-    font-weight: bold;
+    font-weight: bolder;
     cursor: pointer;
   }
   .botao:hover {
-    background: #5988bd;
+    transition: all .1s ease-in-out;
+    transform: scale(1.2);
   }
 
