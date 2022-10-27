@@ -23,7 +23,7 @@ window.onload = function(){
 }
 
 function validar() {
-    // pegando o valor do nome pelos names
+    // pegando o valor pelos ids
     var nome = document.getElementById("nome");
     var sobrenome = document.getElementById("sobrenome");
     var nascimento = document.getElementById("nascimento");
@@ -36,7 +36,7 @@ function validar() {
     var cidade = document.getElementById("cidade");
     var estados = document.getElementById("estados");
 
-    // verificar se o nome está vazio
+    // verificar se o campo está vazio
         if (nome.value == "") {
             alert("Nome não informado");
             // Deixa o input com o focus
@@ -94,7 +94,7 @@ function validar() {
             estados.focus();
             return;
           }
-          alert("Formulário enviado!");
+          alert("Formulário cadastrado com sucesso!");
           // envia o formulário
           //formulario.submit();
 }

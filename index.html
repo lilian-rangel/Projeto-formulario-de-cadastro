@@ -15,7 +15,7 @@
             <fieldset>
                 <legend>Informações pessoais</legend>
                 <div class="informacoesPessoais">
-                    <label for="nome">Nome: </label>
+                    <label for="nome">Nome: <sup style="color: red;">*</sup></label>
                         <input 
                             type="text"
                             id="nome"
@@ -23,7 +23,7 @@
                             placeholder="Insira seu nome"
                             required
                         />
-                    <label for="sobrenome">Sobrenome: </label>
+                    <label for="sobrenome">Sobrenome: <sup style="color: red;">*</sup></label>
                         <input 
                             type="text"
                             id="sobrenome"
@@ -31,7 +31,7 @@
                             placeholder="Insira seu sobrenome"
                             required
                         />
-                    <label for="datadenascimento">Data de nascimento: </label>
+                    <label for="datadenascimento">Data de nascimento: <sup style="color: red;">*</sup></label>
                         <input 
                             type="date"
                             id="nascimento"
@@ -51,7 +51,7 @@
             <fieldset>
                 <legend>Informações de contato</legend>
                 <div class="informacoesContato">
-                        <label for="email">E-mail: </label>
+                        <label for="email">E-mail: <sup style="color: red;">*</sup></label>
                             <input
                                 type="email"
                                 id="email"
@@ -67,9 +67,9 @@
                                 id="telefone"
                                 name="telefone"
                             />
-                        <label for="celular">Celular: </label>
+                        <label for="celular">Celular: <sup style="color: red;">*</sup></label>
                             <input 
-                                type="number"
+                                type="text"
                                 id="celular"
                                 name="celular"
                                 placeholder="Insira seu celular"
@@ -89,17 +89,18 @@
             <fieldset>
                 <legend>Informações residenciais</legend>
                     <div class="informacoesResidenciais">
-                        <label for="cep">CEP: </label>
+                        <label for="cep">CEP: <sup style="color: red;">*</sup></label>
                             <input 
                                 type="text"
                                 id="cep"
                                 name="cep"
                                 placeholder="CEP" 
                                 pattern="[\d]{5}-?[\d]{3}" 
+                                maxlength="8"
                                 data-tipo="cep" 
                                 required
                             />
-                        <label for="endereco">Endereço: </label>
+                        <label for="endereco">Endereço: <sup style="color: red;">*</sup></label>
                             <input 
                                 type="text"
                                 id="endereco"
@@ -107,7 +108,7 @@
                                 placeholder="Insira seu endreço"
                                 required
                             />
-                        <label for="numero">N° </label>
+                        <label for="numero">N° <sup style="color: red;">*</sup></label>
                             <input 
                                 type="text"
                                 id="numero"
@@ -120,21 +121,21 @@
                                 id="complemento"
                                 name="complemento"
                             />
-                        <label for="bairro">Bairro: </label>
+                        <label for="bairro">Bairro: <sup style="color: red;">*</sup></label>
                             <input 
                                 type="text"
                                 id="bairro"
                                 name="bairro"
                                 required
                             />
-                        <label for="cidade">Cidade: </label>
+                        <label for="cidade">Cidade: <sup style="color: red;">*</sup></label>
                             <input 
                                 type="text"
                                 id="cidade"
                                 name="cidade"
                                 required
                             />
-                        <label for="estado">Estado: </label>
+                        <label for="estado">Estado: <sup style="color: red;">*</sup></label>
                             <select name="estados" id="estados" required>
                                 <option value="">Selecione seu Estado</option>
                                 <option value="AC">Acre</option>
@@ -171,11 +172,9 @@
                 <button type="submit" class="botao" onclick="validar()">
                   Cadastrar
                 </button>
-              </div>
+            </div>
         </form>
     </div>
-
-<script src="./script.js"></script>    
-    
+<script src="./script.js"></script> 
 </body>
 </html>
