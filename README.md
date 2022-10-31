@@ -1,7 +1,7 @@
 <h1>Projeto: criação de um formulário com validação em JavaScript </h1> <br />
 
 Segundo projeto da mentoria entregue num prazo de 7 dias. <br />
-O objetivo era começar a manipular informações através da validação do JavaScript e aprofundar os conhecimentos em HTML5, CSS3 e responsividade.
+O objetivo era começar a manipular informações através da validação do JavaScript e aprofundar os conhecimentos em HTML5, CSS3 e responsividade.<br />
 Com esse projeto aprendi um pouco mais sobre como utilizar regex, a utilizar máscaras para validação de celular (como aceitar somente números num campo, por exemplo) e funções em JavaScript.
 
 <b>Desenvolvido utilizando as seguintes tecnologias </b><br />
