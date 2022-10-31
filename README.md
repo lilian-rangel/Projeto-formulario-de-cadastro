@@ -2,6 +2,7 @@
 
 Segundo projeto da mentoria entregue num prazo de 7 dias. <br />
 O objetivo era começar a manipular informações através da validação do JavaScript e aprofundar os conhecimentos em HTML5, CSS3 e responsividade.
+Com esse projeto aprendi um pouco mais sobre como utilizar regex, a utilizar máscaras para validação de celular (como aceitar somente números num campo, por exemplo) e funções em JavaScript.
 
 <b>Desenvolvido utilizando as seguintes tecnologias </b><br />
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" data-canonical-src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&amp;logo=html5&amp;logoColor=white" style="max-width: 100%;">
